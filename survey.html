@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="survey.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Developer Survey Form</h1>
+        <p id="description">Many thanks for sharing your thoughts with us</p>
+      </header>
+      <form id="survey-form" action="">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+          <label for="age" id="number-label">Age</label>
+          <input type="number" name="age" id="number" class="form-control" placeholder="Enter your age" min="14" max="99">
+        </div>
+        <div class="form-group">
+          <p>Your experience as a software developer</p>
+          <select id="dropdown" name="experience" class="form-control" required>
+            <option disabled selected value>Select the range from the below list</option>
+            <option value="0-1">0-1 year</option>
+            <option value="2-4">2-4 years</option>
+            <option value="5-10">5-10 years</option>
+            <option value="10+">10+ years</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Which programming languages do you prefer?</p>
+          <label>
+            <input type="checkbox" name="language" value="HTML" class="input-checkbox">
+            HTML
+            </label>
+            <label>
+            <input type="checkbox" name="language" value="CSS" class="input-checkbox">
+            CSS
+            </label>
+            <label>
+            <input type="checkbox" name="language" value="JavaScript" class="input-checkbox">
+            JavaScript
+            </label>
+            <label>
+            <input type="checkbox" name="language" value="Java" class="input-checkbox">
+            Java
+            </label>
+            <label>
+            <input type="checkbox" name="language" value="Python" class="input-checkbox">
+            Python
+            </label>
+            <label>
+            <input type="checkbox" name="language" value="C/C++" class="input-checkbox">
+            C/C++
+            </label>
+            <label>
+            <input type="checkbox" name="language" value="C#" class="input-checkbox">
+            C#
+            </label>
+            <label>
+            <input type="checkbox" name="language" value="PHP" class="input-checkbox">
+            PHP
+            </label>
+            <label>
+            <input type="checkbox" name="language" value="Julia" class="input-checkbox">
+            Julia
+            </label>
+            <label>
+            <input type="checkbox" name="language" value="R" class="input-checkbox">
+            R
+            </label>
+            <label>
+            <input type="checkbox" name="language" value="Ruby" class="input-checkbox">
+            Ruby
+            </label><br>
+            <label for="language">Other, please specify</label>
+            <input type="text" name="language" class="form-control">
+        </div>
+        <div class="form-group">
+          <p>What is your employment status?</p>
+          <label>
+            <input name="employment" type="radio" value="full-time" class="input-radio" checked>Full-Time Developer
+          </label>
+          <label>
+            <input name="employment" type="radio" value="part-time" class="input-radio">Part-Time Developer
+          </label>
+          <label>
+            <input name="employment" type="radio" value="self" class="input-radio">Self-Employed Developer (Freelancer)
+          </label>
+          <label>
+            <input name="employment" type="radio" value="owner" class="input-radio">Business Owner
+          </label>
+          <label>
+            <input name="employment" type="radio" value="hobbyist" class="input-radio">Hobbyist
+          </label>
+          <label>
+            <input name="employment" type="radio" value="other" class="input-radio">Other
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="comments" id="comment-label">Comments</label><br>
+          <textarea name="comments" rows="8" cols="80" class="input-textarea" placeholder="Any additional information"></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit" name="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
